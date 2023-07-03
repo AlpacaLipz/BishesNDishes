@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "";
+}
+@model Dish
+<div>
+  <div>
+    <h1 class="textShadowBlk txtSize text-center">
+      @ViewBag.OneDish.Name
+    </h1>
+  </div>
+  <div class="containThree marT ">
+    <h3 class="border-4 border-bottom textShadowBlk shadowbox">@ViewBag.Onedish.Name By @ViewBag.Onedish.Chef</h3>
+
+    <h5 class="mt-4 textShadowBlk">@ViewBag.Onedish.Description</h5>
+    <h5 class="mt-5 textShadowBlk"> Calories : @ViewBag.Onedish.Calories</h5>
+    <h5 class="mt-4 textShadowBlk">Tastiness : @ViewBag.Onedish.Tastiness</h5>
+  </div>
+  <div class="marT justify-content-between">
+    <div class="d-flex">
+      <a asp-route-id="@ViewBag.OneDish.DishId" asp-action="DishEdit" asp-controller="Home" class="btn btn-dark marLefton">Edit</a>
+      <a asp-route-id="@ViewBag.OneDish.DishId" asp-action="DishDelete" asp-controller="Home">
+        <button class="btn btn-danger marLeftest">Delete</button>
+      </a>
+    </div>
+  </div>
+</div>

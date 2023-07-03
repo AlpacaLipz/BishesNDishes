@@ -1,0 +1,174 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color: white;
+  background: radial-gradient(lightyellow, skyblue);
+  margin-bottom: 60px;
+}
+
+.marLeft{
+  margin-left: 10px;
+}
+.marLefty{
+  margin-left: 59px;
+}
+.marLeftt{
+  margin-left: 90px;
+}
+.marLeftee{
+  margin-left: 48px;
+}
+.marLefter{
+  margin-left: 150px;
+}
+.marLeftNum{
+  margin-left: 127px;
+}
+.contain{
+  width: 600px;
+}
+.marTop{
+  margin-top: 10px;
+}
+.bordBot{
+  width: 275px;
+  border-bottom: solid black 3px;
+}
+.bordBott{
+  width: 275px;
+  border-bottom: solid white 3px;
+  box-shadow: 0 2px 0 0 black;
+}
+.otherBot{
+  width: 11.9%;
+  border-bottom: solid white 2px;
+  box-shadow: 0 2px 0 0 black;
+}
+.othBot{
+  width: 18.5%;
+  border-bottom: solid white 2px;
+  box-shadow: 0 2px 0 0 black;
+}
+.nameBot{
+  width: 22.3%;
+  border-bottom: solid white 2px;
+  box-shadow: 0 2px 0 0 black;
+}
+.calorieBot{
+  width: 24.7%;
+  border-bottom: solid white 2px;
+  box-shadow: 0 2px 0 0 black;
+}
+.chefBot{
+  width: 16.5%;
+  border-bottom: solid white 2px;
+  box-shadow: 0 2px 0 0 black;
+}
+.navBord{
+  border-top: solid white 3px;
+  border-bottom: solid white 3px;
+}
+.fontWeight{
+  font-weight: 700;
+}
+.fontWeighTwo{
+  font-weight: 300;
+}
+.shadow{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.smTop{
+  margin-top: 2px;
+}
+.containTwo{
+  border: solid white 3px;
+  width: 500px;
+}
+.selectWidth{
+  width: 100px;
+}
+.marLeftest{
+  margin-left: 25px;
+}
+
+.textShadowBlk{
+  text-shadow: black 3px 3px;
+
+}
+.css-selector {
+  background: linear-gradient(271deg, #2d2f2e, #676b69, #252726);
+  background-size: 600% 600%;
+
+  -webkit-animation: todolist 20s ease infinite;
+  -moz-animation: todolist 20s ease infinite;
+  animation: todolist 20s ease infinite;
+}
+
+@-webkit-keyframes todolist {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes todolist {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes todolist {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.inputWidth{
+  width: 105px;
+}
+.txtSize{
+  font-size: 4rem;
+}
+
+.containThree{
+  width: 460px;
+}
+
+.marT{
+  margin-top: 150px;
+}
+.marLefton{
+  margin-left: 500px;
+}
+.shadowbox{
+  box-shadow: 0 2px 0 0 black;
+}

@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Animal Edit";
+}
+@model Dish
+<div>
+    <div>
+        <h1 class="textShadowBlk">Edit Your Dish Bish!</h1>
+    </div>
+    <div class="mt-5">
+        <form asp-action="DishUpdate" asp-controller="Home" asp-route-id="@Model.DishId" method="post">
+            <div class="d-flex">
+                <div class=" contain">
+                    <div class="mt-3 marLeft ">
+                        <label class="nameBot textShadowBlk " asp-for="Name">Name of the Dish : </label>
+                        <input class="from-control marLefty" asp-for="Name" value="@Model.Name">
+                        <span class="text-danger" asp-validation-for="Name"></span>
+                    </div>
+                    <div class="mt-4 marLeft">
+                        <label class="chefBot mt-1 textShadowBlk" asp-for="Chef">Chef's Name : </label>
+                        <input class="from-control marLeftt" asp-for="Chef" value="@Model.Chef" >
+                        <span class="text-danger" asp-validation-for="Chef"></span>
+                    </div>
+                    <div class="mt-4 marLeft">
+                        <label class="calorieBot textShadowBlk " asp-for="Calories">Number of Calories : </label>
+                        <input class="from-control marLeftee text-center inputWidth" asp-for="Calories" value="@Model.Calories">
+                        <span class="text-danger" asp-validation-for="Calories"></span>
+                    </div>
+                    <div class="mt-4 marLeft">
+                        <label asp-for="Tastiness" class="form-label otherBot textShadowBlk">Tastiness : </label>
+                        <select asp-for="Tastiness" class="marLeftNum selectWidth  text-center" value="@Model.Tastiness">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="text-danger" asp-validation-for="Tastiness"></span>
+                        <div>
+                            <button class="mt-5 btn btn-dark textShadowBlk ">Edit Dish</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="containTwo marLefter d-flex">
+                    <div class="marLeft mt-2">
+                        <label class=" othBot textShadowBlk" asp-for="Description">Description : </label>
+                        <textarea class="m-3" asp-for="Description" cols="58" rows="10" placeholder="Your Comment Goes Here" value="@Model.Description"></textarea>
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+<div>
+    <h1 class="display-4 textShadowBlk text-center">Welcome To Bishes N Dishes</h1>
+    <h4 class=" mt-5 textShadowBlk fontWeighTwo text-center">Home | <a class="text-white" asp-controller="Home" asp-action="Form"> Add a Dish</a></h4>
+    <div class="mt-4 textShadowBlk">
+        <h5 cite=" ">Check out some recent dishes</h5>
+    </div>
+    <div class="mt-5">
+        @foreach (Dish d in ViewBag.AllDishes)
+        {
+            <p class="textShadowBlk"><a asp-controller="Home" asp-route-id="@d.DishId" asp-action="Display" class="text-white" >@d.Name</a>by @d.Chef</p>
+        }
+    </div>
+</div>
